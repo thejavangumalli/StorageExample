@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">StorageExample</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_sqlite">SQLite</string>
+    <string name="storage"> Storage Example</string>
+    <string name="title_activity_shared_memory">SharedMemory</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SharedMemory" >
+    <TextView
+        android:id="@+id/book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android Book Name" />
+    <EditText
+        android:id="@+id/bookname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/author"
+        android:background="@drawable/textinputborder"
+        android:ems="8"
+        android:hint="Max. 70 characters" />
+	<Button 
+	    android:id="@+id/save"
+    	android:layout_height="wrap_content"
+    	android:layout_width="wrap_content"
+     	android:layout_centerVertical="true"
+     	android:layout_centerHorizontal="true"
+     	android:text="save"
+     	android:onClick="save"/>
+	<Button 
+	    android:id="@+id/cancel"
+     	android:layout_height="wrap_content"
+     	android:layout_width="wrap_content"
+     	android:layout_centerVertical="true"
+     	android:layout_toRightOf="@id/save"
+     	android:text="cancel"
+     	android:onClick="cancel"/>
+	<TextView
+	    android:id="@+id/description"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/description1"
+	    android:layout_alignBottom="@+id/description1"
+	    android:layout_alignLeft="@+id/author"
+	    android:text="Description" />
+	<TextView
+	    android:id="@+id/author"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/bookname"
+	    android:layout_marginTop="22dp"
+	    android:text="Android Book Author" />
+	<EditText
+	    android:id="@+id/authorname"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignTop="@+id/author"
+	    android:layout_toRightOf="@+id/author"
+	    android:background="@drawable/textinputborder"
+	    android:ems="8"
+	    android:hint="Max. 70 characters" />
+	<EditText
+	    android:id="@+id/description1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="100dp"
+	    android:layout_alignLeft="@+id/authorname"
+	    android:layout_below="@+id/authorname"
+	    android:layout_marginTop="20dp"
+	    android:background="@drawable/textinputborder"
+	    android:ems="8"
+	    android:hint="Maximum 255 characters only"
+	    android:inputType="textMultiLine" >
+	    <requestFocus />
+	</EditText>
+</RelativeLayout>
